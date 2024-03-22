@@ -1,17 +1,25 @@
-from ioc_framework.ioc import IP, Domain
-from ioc_framework.framework import IOCFramework
+from ioc import IP, Domain
+from framework import IOCFramework
 import requests
 import json
 import os
+from dotenv import load_dotenv
+
 
 def main():
 
     framework = IOCFramework()
 
     ip = IP("91.203.193.91")
-    domain = Domain("anydeskupdates.com")
+    domain = Domain("anydeskupdates.com")2
 
     print("Welcome the ioc project.")
+
+    load_dotenv()
+
+    MY_ENV_VAR = os.getenv('API_KEY')
+
+    print(MY_ENV_VAR)
 
     platform = input("Select platform (1: VirusTotal, 2: UrlScan, 3: AbuseIPDB : ") #4: ThreatCrowd 
 

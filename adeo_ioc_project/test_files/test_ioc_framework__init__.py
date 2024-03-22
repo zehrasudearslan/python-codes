@@ -1,5 +1,5 @@
 import unittest
-from ioc_framework.framework import IOCFramework
+from adeo_ioc_project.ioc_framework.maincodes.framework import IOCFramework
 
 class TestIOCFrameworkInit(unittest.TestCase):
     def test_iocs_initialized_empty(self):

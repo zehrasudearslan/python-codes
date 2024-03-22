@@ -1,5 +1,5 @@
 import unittest
-from ioc_framework.framework import IOCFramework
+from adeo_ioc_project.ioc_framework.maincodes.framework import IOCFramework
 from ioc_framework.ioc import IP
 
 class TestIOCFrameworkAddIOC(unittest.TestCase):

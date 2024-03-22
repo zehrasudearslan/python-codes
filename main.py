@@ -1,5 +1,5 @@
-from ioc_framework.ioc import IP, Domain
-from ioc_framework.framework import IOCFramework
+from adeo_ioc_project.ioc_framework.maincodes.ioc import IP, Domain
+from adeo_ioc_project.ioc_framework.maincodes.framework import IOCFramework
 
 def display_menu():
     print("Welcome to the IOC project.")
